@@ -3,18 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>skills </title>
-
-    <!-- CSS -->
+    <title>Raghad Alluqmani — Skills</title>
     <link rel="stylesheet" href="styling.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
-    <!-- JS -->
-    <!-- <script src="js/nav.js" defer></script> -->
- 
-  
-    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="js/nav.js" defer></script>
 </head>
 <body>
   <div class="transition">
@@ -34,240 +27,170 @@
     </div>
   </div>
 
-  <!-- Navbar -->
-  <header id="hero">
-    <nav class="navbar1">
-      <div class="container">
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-        <ul class="nav-menu1">
-          <li><a class="nav-link" href="index.html">Home</a></li>
-          <li><a class="nav-link" href="About_me.html">About me</a></li>
-          <li><a class="nav-link" href="Projects.html">Projects</a></li>
-          <li><a class="nav-link active" href="skills.html">Skills</a></li>
-                              <!-- <li><a class="nav-link " href="contact.html">Contact</a></li> -->
-
-        </ul>
-      </div>
-    </nav>
-  </header>
+  <nav class="navbar1">
+    <div class="container">
+      <a href="index.html" class="brand">Raghad<span>.</span></a>
+      <ul class="nav-menu1">
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="About_me.html">About me</a></li>
+        <li><a class="nav-link" href="Projects.html">Projects</a></li>
+        <li><a class="nav-link active" href="skills.html">Skills</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+    </div>
+  </nav>
 
   <main>
-  <!-- Skills -->
-  <section class="skills-container">
-    <h2>My Skills</h2>
-    <p class="skills-sub">Technologies I use and enjoy while building things I love.</p>
+    <section class="skills-container">
+      <h2>My Skills</h2>
+      <p class="skills-sub">Technologies I use and enjoy while building things I love.</p>
 
-    <div class="skills-grid">
-      <!-- Frontend -->
-      <div class="skill-category">
-        <h3>Frontend</h3>
-
-        <div class="skill">
-  <div class="progress-circle" style="--percent:80">
-    <svg width="100" height="100">
-      <circle class="progress-bg" cx="50" cy="50" r="45"></circle>
-      <circle class="progress-value" cx="50" cy="50" r="45"></circle>
-    </svg>
-    <img src="Photos/html.png" alt="HTML" class="skill-icon">
-  </div>
-  <div class="skill-name">HTML</div>
-</div>
-
-        <div class="skill">
-          <div class="progress-circle" style="--percent:90">
-            <svg width="100" height="100">
-              <circle class="progress-bg" cx="50" cy="50" r="45"></circle>
-              <circle class="progress-value1" cx="50" cy="50" r="45"></circle>
-            </svg>
-                <img src="Photos/css.png" alt="css" class="skill-icon">
-
+      <div class="skills-grid">
+        <!-- Frontend -->
+        <div class="skill-category">
+          <h3>Frontend</h3>
+          <div class="skill-item">
+            <div class="progress-circle" style="--percent:80">
+              <svg width="100" height="100"><circle class="progress-bg" cx="50" cy="50" r="45"></circle><circle class="progress-value" cx="50" cy="50" r="45"></circle></svg>
+              <img src="Photos/html.png" alt="HTML" class="skill-icon">
+            </div>
+            <div class="skill-name">HTML</div>
           </div>
-          <div class="skill-name">CSS</div>
+          <div class="skill-item">
+            <div class="progress-circle" style="--percent:90">
+              <svg width="100" height="100"><circle class="progress-bg" cx="50" cy="50" r="45"></circle><circle class="progress-value" cx="50" cy="50" r="45"></circle></svg>
+              <img src="Photos/css.png" alt="CSS" class="skill-icon">
+            </div>
+            <div class="skill-name">CSS</div>
+          </div>
+          <div class="skill-item">
+            <div class="progress-circle" style="--percent:75">
+              <svg width="100" height="100"><circle class="progress-bg" cx="50" cy="50" r="45"></circle><circle class="progress-value" cx="50" cy="50" r="45"></circle></svg>
+              <img src="Photos/javascript.png" alt="JavaScript" class="skill-icon">
+            </div>
+            <div class="skill-name">JavaScript</div>
+          </div>
+          <div class="skill-item">
+            <div class="progress-circle" style="--percent:65">
+              <svg width="100" height="100"><circle class="progress-bg" cx="50" cy="50" r="45"></circle><circle class="progress-value" cx="50" cy="50" r="45"></circle></svg>
+              <img src="Photos/flutter.png" alt="Flutter" class="skill-icon">
+            </div>
+            <div class="skill-name">Flutter</div>
+          </div>
         </div>
-        <div class="skill">
-          <div class="progress-circle" style="--percent:75">
-            <svg width="100" height="100">
-              <circle class="progress-bg" cx="50" cy="50" r="45"></circle>
-              <circle class="progress-value3" cx="50" cy="50" r="45"></circle>
-            </svg>
-                <img src="Photos/javascript.png" alt="javascript" class="skill-icon">
 
+        <!-- Programming Languages -->
+        <div class="skill-category">
+          <h3>Programming Languages</h3>
+          <div class="skill-item">
+            <div class="progress-circle" style="--percent:85">
+              <svg width="100" height="100"><circle class="progress-bg" cx="50" cy="50" r="45"></circle><circle class="progress-value" cx="50" cy="50" r="45"></circle></svg>
+              <img src="Photos/java.png" alt="Java" class="skill-icon">
+            </div>
+            <div class="skill-name">Java</div>
           </div>
-          <div class="skill-name">JavaScript</div>
+          <div class="skill-item">
+            <div class="progress-circle" style="--percent:80">
+              <svg width="100" height="100"><circle class="progress-bg" cx="50" cy="50" r="45"></circle><circle class="progress-value" cx="50" cy="50" r="45"></circle></svg>
+              <img src="Photos/python.png" alt="Python" class="skill-icon">
+            </div>
+            <div class="skill-name">Python</div>
+          </div>
+          <div class="skill-item">
+            <div class="progress-circle" style="--percent:40">
+              <svg width="100" height="100"><circle class="progress-bg" cx="50" cy="50" r="45"></circle><circle class="progress-value" cx="50" cy="50" r="45"></circle></svg>
+              <img src="Photos/C.png" alt="C" class="skill-icon">
+            </div>
+            <div class="skill-name">C</div>
+          </div>
         </div>
-        <div class="skill">
-          <div class="progress-circle" style="--percent:65">
-            <svg width="100" height="100">
-              <circle class="progress-bg" cx="50" cy="50" r="45"></circle>
-              <circle class="progress-value1" cx="50" cy="50" r="45"></circle>
-            </svg>
-                <img src="Photos/flutter.png" alt="flutter" class="skill-icon">
 
+        <!-- Databases -->
+        <div class="skill-category">
+          <h3>Databases</h3>
+          <div class="skill-item">
+            <div class="progress-circle" style="--percent:70">
+              <svg width="100" height="100"><circle class="progress-bg" cx="50" cy="50" r="45"></circle><circle class="progress-value" cx="50" cy="50" r="45"></circle></svg>
+              <img src="Photos/mongodb.png" alt="MongoDB" class="skill-icon">
+            </div>
+            <div class="skill-name">MongoDB</div>
           </div>
-          <div class="skill-name">Flutter</div>
+          <div class="skill-item">
+            <div class="progress-circle" style="--percent:100">
+              <svg width="100" height="100"><circle class="progress-bg" cx="50" cy="50" r="45"></circle><circle class="progress-value" cx="50" cy="50" r="45"></circle></svg>
+              <img src="Photos/supabse.jpg" alt="Supabase" class="skill-icon">
+            </div>
+            <div class="skill-name">Supabase</div>
+          </div>
+          <div class="skill-item">
+            <div class="progress-circle" style="--percent:75">
+              <svg width="100" height="100"><circle class="progress-bg" cx="50" cy="50" r="45"></circle><circle class="progress-value" cx="50" cy="50" r="45"></circle></svg>
+              <img src="Photos/mysql.png" alt="MySQL" class="skill-icon">
+            </div>
+            <div class="skill-name">MySQL</div>
+          </div>
+        </div>
+
+        <!-- AI & Data Science -->
+        <div class="skill-category">
+          <h3>AI & Data Science</h3>
+          <div class="skill-item">
+            <div class="progress-circle" style="--percent:70">
+              <svg width="100" height="100"><circle class="progress-bg" cx="50" cy="50" r="45"></circle><circle class="progress-value" cx="50" cy="50" r="45"></circle></svg>
+              <img src="Photos/pandas.png" alt="Pandas" class="skill-icon">
+            </div>
+            <div class="skill-name">Pandas</div>
+          </div>
+          <div class="skill-item">
+            <div class="progress-circle" style="--percent:70">
+              <svg width="100" height="100"><circle class="progress-bg" cx="50" cy="50" r="45"></circle><circle class="progress-value" cx="50" cy="50" r="45"></circle></svg>
+              <img src="Photos/NumPy.png" alt="NumPy" class="skill-icon">
+            </div>
+            <div class="skill-name">NumPy</div>
+          </div>
+          <div class="skill-item">
+            <div class="progress-circle" style="--percent:70">
+              <svg width="100" height="100"><circle class="progress-bg" cx="50" cy="50" r="45"></circle><circle class="progress-value" cx="50" cy="50" r="45"></circle></svg>
+              <img src="Photos/Excel.png" alt="Excel" class="skill-icon">
+            </div>
+            <div class="skill-name">Excel</div>
+          </div>
+          <div class="skill-item">
+            <div class="progress-circle" style="--percent:80">
+              <svg width="100" height="100"><circle class="progress-bg" cx="50" cy="50" r="45"></circle><circle class="progress-value" cx="50" cy="50" r="45"></circle></svg>
+              <img src="Photos/Django.png" alt="Django" class="skill-icon">
+            </div>
+            <div class="skill-name">Django</div>
+          </div>
+        </div>
+
+        <!-- Other skills -->
+        <div class="skill-category">
+          <h3>Other Skills</h3>
+          <div class="skill-item">
+            <div class="progress-circle" style="--percent:70">
+              <svg width="100" height="100"><circle class="progress-bg" cx="50" cy="50" r="45"></circle><circle class="progress-value" cx="50" cy="50" r="45"></circle></svg>
+              <img src="Photos/github.png" alt="GitHub" class="skill-icon">
+            </div>
+            <div class="skill-name">GitHub</div>
+          </div>
+          <div class="skill-item">
+            <div class="progress-circle" style="--percent:70">
+              <svg width="100" height="100"><circle class="progress-bg" cx="50" cy="50" r="45"></circle><circle class="progress-value" cx="50" cy="50" r="45"></circle></svg>
+              <img src="Photos/git.png" alt="Git" class="skill-icon">
+            </div>
+            <div class="skill-name">Version Control</div>
+          </div>
         </div>
       </div>
-
-      <!-- Programming Languages -->
-      <div class="skill-category">
-        <h3>Programming Languages</h3>
-        <div class="skill">
-          <div class="progress-circle" style="--percent:85">
-            <svg width="100" height="100">
-              <circle class="progress-bg" cx="50" cy="50" r="45"></circle>
-              <circle class="progress-value3" cx="50" cy="50" r="45"></circle>
-            </svg>
-                <img src="Photos/java.png" alt="java" class="skill-icon">
-
-          </div>
-          <div class="skill-name">Java</div>
-
-        </div>
-        <div class="skill">
-          <div class="progress-circle" style="--percent:80">
-            <svg width="100" height="100">
-              <circle class="progress-bg" cx="50" cy="50" r="45"></circle>
-              <circle class="progress-value1" cx="50" cy="50" r="45"></circle>
-            </svg>
-                <img src="Photos/python.png" alt="python" class="skill-icon">
-
-          </div>
-          <div class="skill-name">Python</div>
-        </div>
-          <div class="skill">
-          <div class="progress-circle" style="--percent:40">
-            <svg width="100" height="100">
-              <circle class="progress-bg" cx="50" cy="50" r="45"></circle>
-              <circle class="progress-value3" cx="50" cy="50" r="45"></circle>
-            </svg>
-                <img src="Photos/C.png" alt="C" class="skill-icon">
-
-          </div>
-          <div class="skill-name">C</div>
-        </div>
-      </div>
-
-      <!-- Databases -->
-      <div class="skill-category">
-        <h3>Databases</h3>
-        <div class="skill">
-          <div class="progress-circle" style="--percent:70">
-            <svg width="100" height="100">
-              <circle class="progress-bg" cx="50" cy="50" r="45"></circle>
-              <circle class="progress-value1" cx="50" cy="50" r="45"></circle>
-            </svg>
-    <img src="Photos/mongodb.png" alt="MongoDB" class="skill-icon">
-          </div>
-          <div class="skill-name">MongoDB</div>
-        </div>
-         <div class="skill">
-          <div class="progress-circle" style="--percent:100">
-            <svg width="100" height="100">
-              <circle class="progress-bg" cx="50" cy="50" r="45"></circle>
-              <circle class="progress-value1" cx="50" cy="50" r="45"></circle>
-            </svg>
-    <img src="Photos/supabse.jpg" alt="supabse" class="skill-icon">
-          </div>
-          <div class="skill-name">supabse</div>
-        </div>
-        <div class="skill">
-          <div class="progress-circle" style="--percent:75">
-            <svg width="100" height="100">
-              <circle class="progress-bg" cx="50" cy="50" r="45"></circle>
-              <circle class="progress-value3" cx="50" cy="50" r="45"></circle>
-            </svg>
-    <img src="Photos/mysql.png" alt="MySQL" class="skill-icon">
-          </div>
-          <div class="skill-name">MySQL</div>
-        </div>
-      </div>
-
-
-       <!-- Databases -->
-      <div class="skill-category">
-        <h3>AI & Data Science</h3>
-        <div class="skill">
-          <div class="progress-circle" style="--percent:70">
-            <svg width="100" height="100">
-              <circle class="progress-bg" cx="50" cy="50" r="45"></circle>
-              <circle class="progress-value2" cx="50" cy="50" r="45"></circle>
-            </svg>
-    <img src="Photos/pandas.png" alt="pandas" class="skill-icon">
-          </div>
-          <div class="skill-name">Pandas</div>
-          
-              <div class="skill">
-          <div class="progress-circle" style="--percent:70">
-            <svg width="100" height="100">
-              <circle class="progress-bg" cx="50" cy="50" r="45"></circle>
-              <circle class="progress-value1" cx="50" cy="50" r="45"></circle>
-            </svg>
-    <img src="Photos/NumPy.png" alt="NumPy" class="skill-icon">
-          </div>
-          <div class="skill-name">NumPy</div>
-        </div>
-            <div class="skill">
-          <div class="progress-circle" style="--percent:70">
-            <svg width="100" height="100">
-              <circle class="progress-bg" cx="50" cy="50" r="45"></circle>
-              <circle class="progress-value3" cx="50" cy="50" r="45"></circle>
-            </svg>
-    <img src="Photos/Excel.png" alt="Excel" class="skill-icon">
-          </div>
-          <div class="skill-name">Excel</div>
-        </div>
-      
-
-      <!-- Version Control -->
-    
-          <!-- Frontend -->
-
-
-
-  <div class="progress-circle" style="--percent:80">
-    <svg width="100" height="100">
-      <circle class="progress-bg" cx="50" cy="50" r="45"></circle>
-      <circle class="progress-value" cx="50" cy="50" r="45"></circle>
-    </svg>
-    <img src="Photos/Django.png" alt="Django" class="skill-icon">
-  </div>
-  <div class="skill-name">Django</div>
-</div>
-    </div>
-     <!-- Other skills -->
-      <div class="skill-category">
-        <h3>Other skills</h3>
-   <div class="skill">
-          <div class="progress-circle" style="--percent:70">
-            <svg width="100" height="100">
-              <circle class="progress-bg" cx="50" cy="50" r="45"></circle>
-              <circle class="progress-value1" cx="50" cy="50" r="45"></circle>
-            </svg>
-    <img src="Photos/github.png" alt="Github" class="skill-icon">
-          </div>
-          <div class="skill-name">Github</div>
-        </div>
-          <div class="skill">
-          <div class="progress-circle" style="--percent:70">
-            <svg width="100" height="100">
-              <circle class="progress-bg" cx="50" cy="50" r="45"></circle>
-              <circle class="progress-value1" cx="50" cy="50" r="45"></circle>
-            </svg>
-    <img src="Photos/git.png" alt="Git" class="skill-icon">
-          </div>
-          <div class="skill-name">version control </div>
-        </div>
-       
-</div>
-  </section>
+    </section>
   </main>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
   <script src="js/transition.js" defer></script>
   <script src="js/projects-slider.js" defer></script>
+  <script src="js/effects.js" defer></script>
 </body>
 </html>
