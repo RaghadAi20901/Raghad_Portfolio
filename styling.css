@@ -1086,6 +1086,14 @@ body.is-transitioning .navbar1 {
   display: flex;
 }
 
+.transition-row.row-1 .block {
+  transform-origin: top;
+}
+
+.transition-row.row-2 .block {
+  transform-origin: bottom;
+}
+
 .block {
   flex: 1;
   background: var(--bg-primary);
