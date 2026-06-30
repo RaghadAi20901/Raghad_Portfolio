@@ -35,29 +35,25 @@
     currentIndex = index;
     sections[index].scrollIntoView({ behavior: 'smooth', block: 'start' });
 
-    // Update active nav link
-    document.querySelectorAll('.nav-link[href^="#"]').forEach(link => {
-      link.classList.remove('active');
-      const href = link.getAttribute('href').slice(1);
-      if (href === SECTION_IDS[index]) {
-        link.classList.add('active');
-      }
-    });
+    // Close mobile menu if open
+    const menu = document.querySelector('.nav-menu1');
+    const burger = document.querySelector('.hamburger');
+    if (menu && menu.classList.contains('open')) {
+      menu.classList.remove('open');
+      if (burger) burger.classList.remove('open');
+    }
 
     // Debounce to prevent rapid-fire scrolls
     setTimeout(() => { isScrolling = false; }, 800);
   }
 
   function handleKeyDown(e) {
-    // Only handle Up/Down arrows
     if (e.key !== 'ArrowUp' && e.key !== 'ArrowDown') return;
 
-    // Don't intercept if user is in a form input or textarea
     const tag = document.activeElement?.tagName?.toLowerCase();
     if (tag === 'input' || tag === 'textarea' || tag === 'select') return;
 
     e.preventDefault();
-
     updateCurrentIndex();
 
     if (e.key === 'ArrowDown') {
@@ -70,10 +66,14 @@
   function initScrollNav() {
     if (window.scrollNavInitialized) return;
     window.scrollNavInitialized = true;
-
     document.addEventListener('keydown', handleKeyDown);
   }
 
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initScrollNav);
+  } else {
+    initScrollNav();
+  }
   // Init on load and also after DOM changes
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', initScrollNav);
