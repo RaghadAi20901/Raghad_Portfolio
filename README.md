@@ -24,3 +24,4 @@ Welcome to my personal portfolio. This website showcases my projects and skills.
 - Google Fonts (Playfair Display, Inter)
 - Vanilla JS modules: `js/nav.js`, `js/transition.js`, `js/effects.js`, `js/projects-slider.js`, `js/spa.js`
 - Git helper scripts: `gitcheck.sh`, `gitpush.sh`
+  
