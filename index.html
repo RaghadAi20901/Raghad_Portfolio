@@ -65,6 +65,11 @@
       border-color: #fbbf24;
       color: #fbbf24;
     }
+    .mockup-nav a.active {
+      border-color: #fbbf24;
+      color: #fbbf24;
+      background: rgba(251, 191, 36, 0.1);
+    }
 
     /* ============================
        SECTION LABEL
@@ -361,6 +366,19 @@
       margin-top: 0.3rem;
       display: flex;
       justify-content: space-between;
+    }
+    .cert-tack .cert-verify {
+      display: inline-block;
+      margin-top: 0.4rem;
+      font-size: 0.5rem;
+      font-weight: 600;
+      color: #60a5fa;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      transition: color 0.15s;
+    }
+    .cert-tack .cert-verify:hover {
+      color: #3b82f6;
     }
 
     /* ============================
@@ -687,11 +705,11 @@
       <h1>Raghad Alluqmani </h1>
     </div>
     <nav class="mockup-nav">
-      <a href="#hero-mock">Hero</a>
-      <a href="#about-mock">About</a>
-      <a href="#projects-mock">Projects</a>
-      <a href="#skills-mock">Skills</a>
-      <a href="#cta-mock">Contact</a>
+      <a href="#hero-mock" class="mockup-nav-link">Hero</a>
+      <a href="#about-mock" class="mockup-nav-link">About</a>
+      <a href="#projects-mock" class="mockup-nav-link">Projects</a>
+      <a href="#skills-mock" class="mockup-nav-link">Skills</a>
+      <a href="#cta-mock" class="mockup-nav-link">Contact</a>
     </nav>
   </header>
 
@@ -735,7 +753,7 @@
           <div class="achievement"><span class="icon">⚡</span> 100% Curious</div>
         </div>
         <div>
-          <a href="#" class="btn-primary-mock"><span>⬇</span> Download Resume</a>
+          <a href="back-up_files/acdemic_cv.pdf" class="btn-primary-mock" target="_blank" rel="noopener"><span>⬇</span> Download Resume</a>
         </div>
       </div>
     </div>
@@ -759,7 +777,8 @@
         <div class="pin-card">
           <h3>🎓 Education</h3>
           <p><strong>Umm Al-Qura University</strong><br>B.S. Computer Science · Makkah</p>
-          <p style="font-size:0.75rem;">Expected Grad: June 2026</p>
+          <p style="font-size:0.75rem;">Graduated: June 2026</p>
+          <p style="font-size:0.75rem; color:#4a4a5a; margin-top:0.3rem;">I chose Computer Science because I am passionate about technology, AI, and solving real-world problems through code — from crime pattern detection to ride-sharing apps. This degree gave me the foundation to turn curiosity into working software.</p>
           <div style="display:flex; gap:0.35rem; margin-top:0.4rem; flex-wrap:wrap;">
             <span class="tag">AI</span><span class="tag">ML</span><span class="tag">Data</span><span class="tag">Flutter</span>
           </div>
@@ -776,18 +795,22 @@
             <div class="cert-tack">
               <div class="cert-name">Python Programming Specialization</div>
               <div class="cert-meta"><span>Coursera</span><span>Nov–Dec 2025</span></div>
+              <a class="cert-verify" href="https://coursera.org/share/d4c4a16fa9141b4c5a7bb4c2ea6e2573" target="_blank" rel="noopener">Verify Credential →</a>
             </div>
             <div class="cert-tack">
               <div class="cert-name">Research Bioethics</div>
               <div class="cert-meta"><span>NCBE · KACST</span><span>Oct 2025</span></div>
+              <a class="cert-verify" href="https://drive.google.com/file/d/12Zk4ViXN3cyTiwY6vf5oWvcFVCB-Wzgf/view" target="_blank" rel="noopener">Verify Credential →</a>
             </div>
             <div class="cert-tack">
               <div class="cert-name">Intro to Cloud Computing</div>
               <div class="cert-meta"><span>IBM</span><span>May 2025</span></div>
+              <a class="cert-verify" href="https://coursera.org/share/b1e691c181bb66d9dc1e9d76931c049c" target="_blank" rel="noopener">Verify Credential →</a>
             </div>
             <div class="cert-tack">
               <div class="cert-name">REST API · Django</div>
               <div class="cert-meta"><span>Tuwaiq Academy</span><span>Apr–May 2025</span></div>
+              <a class="cert-verify" href="https://drive.google.com/file/d/1jxPU6psc-9TllHxdFhBuFb8OxfF5qiG3/view" target="_blank" rel="noopener">Verify Credential →</a>
             </div>
           </div>
         </div>
@@ -812,7 +835,7 @@
             <div class="tech-tags"><span class="tech-tag">Python</span><span class="tech-tag">Scikit-learn</span><span class="tech-tag">Pandas</span><span class="tech-tag">Folium</span></div>
             <p>ML clustering · hotspot detection · temporal analysis · heatmap visualizations on Chicago crime data.</p>
           </div>
-          <div class="card-footer"><span class="xp">⚡ <span>+250 XP</span></span><a href="#" class="play-btn">▶ PLAY</a></div>
+          <div class="card-footer"><span class="xp">⚡ <span>+250 XP</span></span><a href="https://github.com/RaghadAi0981/Crime_Pattern_Discovery" target="_blank" rel="noopener" class="play-btn">▶ PLAY</a></div>
         </div>
         <div class="game-card">
           <div class="card-banner" style="background-image: linear-gradient(135deg, #3a1a5e, #1f0f3a);">
@@ -823,7 +846,7 @@
             <div class="tech-tags"><span class="tech-tag">Python</span><span class="tech-tag">MIMIC-III</span><span class="tech-tag">LogReg</span></div>
             <p>Healthcare ML using MIMIC-III clinical data — cleaning, feature engineering, model comparison.</p>
           </div>
-          <div class="card-footer"><span class="xp">⚡ <span>+220 XP</span></span><a href="#" class="play-btn">▶ PLAY</a></div>
+          <div class="card-footer"><span class="xp">⚡ <span>+220 XP</span></span><a href="https://github.com/RaghadAi0981/Disease_Prediction_Using_Clinical_Data" target="_blank" rel="noopener" class="play-btn">▶ PLAY</a></div>
         </div>
         <div class="game-card">
           <div class="card-banner" style="background-image: linear-gradient(135deg, #2d5a1a, #173a0f);">
@@ -834,7 +857,7 @@
             <div class="tech-tags"><span class="tech-tag">C++</span><span class="tech-tag">OpenGL</span><span class="tech-tag">GLUT</span></div>
             <p>2-stage snake · HUD · pause/restart · bombs · collisions · sound effects.</p>
           </div>
-          <div class="card-footer"><span class="xp">⚡ <span>+180 XP</span></span><a href="#" class="play-btn">▶ PLAY</a></div>
+          <div class="card-footer"><span class="xp">⚡ <span>+180 XP</span></span><a href="https://github.com/RaghadAi0981/Snake_Game" target="_blank" rel="noopener" class="play-btn">▶ PLAY</a></div>
         </div>
         <div class="game-card">
           <div class="card-banner" style="background-image: linear-gradient(135deg, #5a4a1a, #3a2f0f);">
@@ -845,7 +868,7 @@
             <div class="tech-tags"><span class="tech-tag">Flutter</span><span class="tech-tag">Firebase</span><span class="tech-tag">Google Maps</span></div>
             <p>Full-stack ride booking & driver tracking with navigation & payment integration.</p>
           </div>
-          <div class="card-footer"><span class="xp">⚡ <span>+300 XP</span></span><a href="#" class="play-btn">▶ PLAY</a></div>
+          <div class="card-footer"><span class="xp">⚡ <span>+300 XP</span></span><a href="https://github.com/RaghadAi0981/PROJECT-1-Masaar" target="_blank" rel="noopener" class="play-btn">▶ PLAY</a></div>
         </div>
         <div class="game-card">
           <div class="card-banner" style="background-image: linear-gradient(135deg, #1a3a5a, #0f2a3f);">
@@ -856,7 +879,7 @@
             <div class="tech-tags"><span class="tech-tag">Python</span><span class="tech-tag">BeautifulSoup</span><span class="tech-tag">Pandas</span></div>
             <p>Amazon scraping · GDP cleaning · Spam vs Ham classification.</p>
           </div>
-          <div class="card-footer"><span class="xp">⚡ <span>+120 XP</span></span><a href="#" class="play-btn">▶ PLAY</a></div>
+          <div class="card-footer"><span class="xp">⚡ <span>+120 XP</span></span><a href="https://github.com/RaghadAi1/Python_Projects_DataScience" target="_blank" rel="noopener" class="play-btn">▶ PLAY</a></div>
         </div>
         <div class="game-card">
           <div class="card-banner" style="background-image: linear-gradient(135deg, #3a2d1a, #2a1f0f);">
@@ -867,7 +890,7 @@
             <div class="tech-tags"><span class="tech-tag">C++</span><span class="tech-tag">Arduino</span><span class="tech-tag">Sensors</span></div>
             <p>Water level & ultrasonic distance detection with LEDs and buzzer alerts.</p>
           </div>
-          <div class="card-footer"><span class="xp">⚡ <span>+100 XP</span></span><a href="#" class="play-btn">▶ PLAY</a></div>
+          <div class="card-footer"><span class="xp">⚡ <span>+100 XP</span></span><a href="https://github.com/RaghadAi0981/Arduino_projects" target="_blank" rel="noopener" class="play-btn">▶ PLAY</a></div>
         </div>
         <div class="game-card">
           <div class="card-banner" style="background-image: linear-gradient(135deg, #2a1a4a, #1a0f2f);">
@@ -878,7 +901,7 @@
             <div class="tech-tags"><span class="tech-tag">NLP</span><span class="tech-tag">TF-IDF</span><span class="tech-tag">LogReg</span></div>
             <p>85.6% accuracy classifying Amazon food reviews using TF-IDF & Logistic Regression.</p>
           </div>
-          <div class="card-footer"><span class="xp">⚡ <span>+200 XP</span></span><a href="#" class="play-btn">▶ PLAY</a></div>
+          <div class="card-footer"><span class="xp">⚡ <span>+200 XP</span></span><a href="https://github.com/RaghadAi0981/Amazon-Fine-Food-Reviews-NLP" target="_blank" rel="noopener" class="play-btn">▶ PLAY</a></div>
         </div>
         <div class="game-card">
           <div class="card-banner" style="background-image: linear-gradient(135deg, #1a4a3a, #0f2f2a);">
@@ -889,7 +912,7 @@
             <div class="tech-tags"><span class="tech-tag">React</span><span class="tech-tag">Leaflet</span><span class="tech-tag">OpenStreetMap</span></div>
             <p>Bilingual property search with map-based visualization.</p>
           </div>
-          <div class="card-footer"><span class="xp">⚡ <span>+160 XP</span></span><a href="#" class="play-btn">▶ PLAY</a></div>
+          <div class="card-footer"><span class="xp">⚡ <span>+160 XP</span></span><a href="https://github.com/RaghadAi0981/Property_Management" target="_blank" rel="noopener" class="play-btn">▶ PLAY</a></div>
         </div>
       </div>
     </div>
@@ -951,9 +974,9 @@
         <h2>Let's Build Something <span style="text-decoration:underline wavy #fbbf24 3px; text-underline-offset:6px;">Legendary</span></h2>
         <p>I'm currently looking for internships and collaboration opportunities.<br>Glitch-free code guaranteed. (Mostly.)</p>
         <div class="btn-row">
-          <a href="#" class="primary">📧 raghad@portfolio.dev</a>
-          <a href="#" class="secondary">🔗 LinkedIn</a>
-          <a href="#" class="secondary">🐙 GitHub</a>
+          <a href="mailto:raghad.alluqmani@example.com" class="primary">📧 raghad@portfolio.dev</a>
+          <a href="https://www.linkedin.com/in/raghad-alqmani-062a86299/" class="secondary" target="_blank" rel="noopener">🔗 LinkedIn</a>
+          <a href="https://github.com/RaghadAi1" class="secondary" target="_blank" rel="noopener">🐙 GitHub</a>
         </div>
       </div>
     </div>
@@ -963,5 +986,43 @@
     <span>© 2026 RAGHAD ALLUQMANI · BUILT WITH ☕ & DETERMINATION · MOCKUP V2.0</span>
   </footer>
 
+  <!-- ============================
+       NAV ACTIVE LINK TRACKING — INLINE SCRIPT
+       ============================ -->
+  <script>
+    (function() {
+      'use strict';
+
+      // Highlight active nav link on scroll
+      const sections = document.querySelectorAll('section[id]');
+      const navLinks = document.querySelectorAll('.mockup-nav-link');
+
+      function updateActiveNav() {
+        let currentId = '';
+        const scrollY = window.scrollY + 100;
+
+        sections.forEach(function(section) {
+          const top = section.offsetTop;
+          const height = section.offsetHeight;
+          if (scrollY >= top && scrollY < top + height) {
+            currentId = section.getAttribute('id');
+          }
+        });
+
+        navLinks.forEach(function(link) {
+          link.classList.remove('active');
+          const href = link.getAttribute('href');
+          if (href === '#' + currentId) {
+            link.classList.add('active');
+          }
+        });
+      }
+
+      // Run on scroll with passive flag for performance
+      window.addEventListener('scroll', updateActiveNav, { passive: true });
+      window.addEventListener('resize', updateActiveNav, { passive: true });
+      updateActiveNav();
+    })();
+  </script>
 </body>
 </html>
